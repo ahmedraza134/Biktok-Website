@@ -28,11 +28,14 @@ const Navbar = () => {
       root.style.setProperty("--font-color", "black");
       root.style.setProperty("--background-color", "white");
       root.style.setProperty("--nav-container-color", "#f1f1f1");
+      root.style.setProperty("--footer-span-color", "black");
+
     } else {
       document.body.classList.remove("light-mode");
       root.style.setProperty("--font-color", "white");
       root.style.setProperty("--background-color", "black");
       root.style.setProperty("--nav-container-color", "#2c2c2c");
+      root.style.setProperty("--footer-span-color", "#909090");
     }
   };
 
@@ -73,31 +76,36 @@ const Navbar = () => {
           </button>
         </div>
         <div className="small-dropdown">
-          <div>
-            <li>
-              <a href="#">Buy Crypto</a>
-            </li>
-          </div>
-          <div>
-            <li>
-              <a href="#">Discover</a>
-            </li>
-          </div>
-          <div>
-            <li>
-              <a href="#">Trade</a>
-            </li>
-          </div>
-          <div>
-            <li>
-              <a href="#">Grow</a>
-            </li>
-          </div>
-          <div>
-            <li>
-              <a href="#">Build</a>
-            </li>
-          </div>
+          <select name="cars" id="cars" className="dropdown">
+            <option value="volvo">Buy Crypto</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <select name="cars" id="cars" className="dropdown">
+            <option value="volvo">Discover</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <select name="cars" id="cars" className="dropdown">
+            <option value="volvo">Trade</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <select name="cars" id="cars" className="dropdown">
+            <option value="volvo">Grow</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <select name="cars" id="cars" className="dropdown">
+            <option value="volvo">Build</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
         </div>
         <div className="search-box">
           <i className="bi bi-search search-icon" />
@@ -158,49 +166,44 @@ const Navbar = () => {
         </div>
         <div className="nav-dropdown hideOnMobile">
           <div className="hideOnMobile">
-            <li className="d-flex ">
-              <a href="#">Buy </a>
-              <i
-                className="bi bi-caret-down-fill"
-                style={{ color: "white", fontSize: "10px", marginTop: "5px" }}
-              ></i>
-            </li>
+            <select name="cars" id="cars" className="dropdown">
+              <option value="volvo">Buy Crypto</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
           </div>
           <div className="hideOnMobile">
-            <li className="d-flex">
-              <a href="#">Discover</a>
-              <i
-                className="bi bi-caret-down-fill"
-                style={{ color: "white", fontSize: "10px", marginTop: "5px" }}
-              ></i>
-            </li>
+            <select name="cars" id="cars" className="dropdown">
+              <option value="volvo">Discover</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
           </div>
           <div className="hideOnMobile">
-            <li className="d-flex">
-              <a href="#">Trade</a>
-              <i
-                className="bi bi-caret-down-fill"
-                style={{ color: "white", fontSize: "10px", marginTop: "5px" }}
-              ></i>
-            </li>
+            <select name="cars" id="cars" className="dropdown">
+              <option value="volvo">Trade</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
           </div>
           <div className="hideOnMobile">
-            <li className="d-flex">
-              <a href="#">Grow</a>
-              <i
-                className="bi bi-caret-down-fill"
-                style={{ color: "white", fontSize: "10px", marginTop: "5px" }}
-              ></i>
-            </li>
+            <select name="cars" id="cars" className="dropdown">
+              <option value="volvo">Grow</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
           </div>
           <div className="hideOnMobile">
-            <li className="d-flex">
-              <a href="#">Build</a>
-              <i
-                className="bi bi-caret-down-fill"
-                style={{ color: "white", fontSize: "10px", marginTop: "5px" }}
-              ></i>
-            </li>
+            <select name="cars" id="cars" className="dropdown">
+              <option value="volvo">Build</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
           </div>
         </div>
         <div className="search-box hideOnMobile">
@@ -246,9 +249,9 @@ const Navbar = () => {
           <a href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              height={24}
+              height={30}
               viewBox="0 -960 960 960"
-              width={24}
+              width={30}
               fill={darkModes.darkMode ? "black" : "white"}
             >
               <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
