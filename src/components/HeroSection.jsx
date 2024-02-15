@@ -68,7 +68,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="hero-sec-right">
-        <img src={herorightimg} alt="iphone image" width={351} height={728} />
+        <img src={herorightimg} alt="iphone image"  />
       </div>
     </div>
   );

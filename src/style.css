@@ -3,7 +3,7 @@
   --font-color: #ffffff;
   --background-color: #000;
   --nav-container-color: #2c2c2c;
-  --nav-input-bg: #FFFFFF09 !important; 
+  --nav-input-bg: #ffffff09 !important;
   --footer-span-color: #909090;
 }
 
@@ -107,6 +107,7 @@ body {
   text-align: left;
   color: var(--font-color);
   background: transparent;
+  cursor: pointer;
 }
 
 .dropdown option {
@@ -179,7 +180,6 @@ body {
   outline: none;
 }
 .nav-last-icons {
- 
   cursor: pointer;
 }
 
@@ -247,7 +247,7 @@ nav li:first-child {
   height: 20px !important;
   cursor: pointer;
 }
-.form-check  input[type="checkbox"] {
+.form-check input[type="checkbox"] {
   background-color: white !important;
   border-color: black !important; /* Optional: Set border color for the circle */
   outline: none !important;
@@ -258,7 +258,6 @@ nav li:first-child {
   border-color: black !important; /* Optional: Set border color for the circle */
   outline: none !important;
 }
-
 
 @media screen and (max-width: 1260px) {
   .nav-container {
@@ -310,7 +309,7 @@ nav li:first-child {
   /* background-color: #000; */
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding-bottom: 54px;
 }
 
@@ -363,6 +362,11 @@ nav li:first-child {
   line-height: 20px;
 }
 
+.hero-sec-input button:hover {
+  background-color: var(--font-color);
+  color: var(--background-color);
+}
+
 .hero-sec-left-images {
   margin-top: 120px;
   /* margin-left: auto;
@@ -374,9 +378,14 @@ nav li:first-child {
   margin-top: 92px;
 }
 
+.hero-sec-right img {
+  width: 351px;
+  height: 728px;
+}
+
 /* Hero Component Media Query */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1110px) {
   .hero-container {
     display: flex;
     flex-direction: column;
@@ -834,12 +843,11 @@ nav li:first-child {
 @media screen and (max-width: 520px) {
   .questions-container .questions-title h1 {
     font-size: 40px;
-    }
+  }
 
-    .accordion {
-      padding-top: 0px;
-    }
-  
+  .accordion {
+    padding-top: 0px;
+  }
 }
 
 /* Footer Component Styling */
