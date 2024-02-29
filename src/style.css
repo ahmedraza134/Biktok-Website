@@ -891,7 +891,7 @@ nav li:first-child {
 .footer-columns-container {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-top: 32px;
 }
 
@@ -981,9 +981,9 @@ nav li:first-child {
   cursor: pointer;
 }
 
-/* Footer Container Media Query */
+/* Footer Container Media Query  */
 
-/* @media screen and (max-width: 1070px) {
+@media screen and (max-width: 1070px) {
   .footer-top {
     display: flex;
     flex-direction: column;
@@ -1013,4 +1013,4 @@ nav li:first-child {
   .footer-column-five .footer-column-six {
     text-align: center;
   }
-} */
+}
